@@ -1,5 +1,5 @@
 class CreateReceitas < ActiveRecord::Migration
-  def seld.up
+  def self.up
     create_table :receitas do |t|
       t.integer :prato_id
       t.text :conteudo
@@ -7,7 +7,7 @@ class CreateReceitas < ActiveRecord::Migration
     end
   end
   
-  def seld.down
+  def self.down
     drop_table :receitas
   end
 end
